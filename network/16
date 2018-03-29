@@ -1,0 +1,15 @@
+Pour faire pointer une adresse de notre choix sur une ip quelconque il suffit d'ajouter une entrée au fichier /etc/hosts
+
+Le fichier actuel :
+
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+
+Le fichier modifié :
+
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+49.19.122.85	intra.42.fr
+69.69.69.69		lemonde.de.mickey.com
