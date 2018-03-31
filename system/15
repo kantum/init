@@ -1,0 +1,1 @@
+sudo kill `ps ax | grep '[t]ail -f /var/log/syslog' | awk '{print $1}'`

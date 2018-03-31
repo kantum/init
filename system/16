@@ -1,0 +1,33 @@
+Le service qui permet de lancer des tâches régulières est cron.
+Il utilise le fichier crontab qui signifie ChRONos TABle en grec ou table de planification en français.
+Pour planifier une tache il faut éditer le fichier /etc/crontab de la manière suivante :
+
+crontab -e
+
+m   h  dom mon dow command
+*   *  *   *   *   commande lancée toute les minutes
+*/5 *  *   *   *   commande lancée toute les 5 minutes
+0   *  *   *   *   commande horaire
+0   0  *   *   *   commande journalière   
+0   0  1   *   *   commande mensuelle   
+0   0  *   *   0   commande hebdomadaire   
+0   0  1   1   *   commande annuelle
+42  12 *   *   1-5 commande lancée tout les jours ouvrés a 12h42
+
+· m pour minute
+· h pour hour
+· dom pour day of month
+· mon pour month
+· dow pour day of week
+
+Ce schema explique plutôt bien la syntaxe :
+
+# ┌───────────── minute (0 - 59)
+# │ ┌───────────── hour (0 - 23)
+# │ │ ┌───────────── day of month (1 - 31)
+# │ │ │ ┌───────────── month (1 - 12)
+# │ │ │ │ ┌───────────── day of week (0 - 6) (Sunday to Saturday;
+# │ │ │ │ │                                   7 is also Sunday on some systems)
+# │ │ │ │ │
+# │ │ │ │ │
+# * * * * *  command to execute

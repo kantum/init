@@ -1,0 +1,2 @@
+Le fichier contenant les clefs ssh est /home/$USER/.ssh/authorized_keys.
+Pour ajouter une clef il faut soit l'ajouter depuis le server simplement dans ce fichier soit utiliser l'utilitaire ssh-copy-id depuis la machine avec laquel on veux se connecter

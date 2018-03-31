@@ -1,0 +1,16 @@
+Cela dépend de ce que l'on entend par "la version",
+si l'on cherche a avoir le numéro de version on peut le trouver dans :
+
+· /etc/debian_version
+
+La distribution et le numéro de version dans :
+
+· /etc/issue
+
+Plus d'information dans le fichier suivant :
+
+· /etc/os-release
+
+Ainsi que la version du noyau :
+
+· /proc/version

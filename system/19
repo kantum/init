@@ -1,0 +1,1 @@
+sudo iptables -A INPUT -s 0.0.0.0/0 -j DROP

@@ -2,15 +2,15 @@ La commande traceroute nous donne en première ligne :
 
 	1  10.11.254.254 (10.11.254.254)  0.839 ms  1.229 ms  0.709 ms
 
-Étant donné que ifconfig nous dit que nous somme 10.11.2.17(en l'occurence) avec un netmask égal à 0xffff0000 ou 255.255.0.0 ou /16 en CIDR, l'adresse 10.11.254.254 est la dernière adresse avant celle du broadcast et route get default nous informe de sa qualité de "gateway", c'est donc le sous-réseau 10.11.0.0/16 que l'on utilise en cluster.
+Étant donné que ifconfig nous dit que nous sommes 10.11.2.17(en l'occurence) avec un netmask égal à 0xffff0000 ou 255.255.0.0 ou /16 en CIDR, l'adresse 10.11.254.254 est la dernière adresse avant celle du broadcast et "route get default" nous informe de sa qualité de "gateway", c'est donc le sous-réseau 10.11.0.0/16 que l'on utilise en cluster.
 Traceroute nous dit que nous nous connectons en second lieu a 10.60.1.11 :
 
 	2  nat-1 (10.60.1.11)  0.157 ms  0.152 ms  0.150 ms
 
-Après tout ça notre cher traceroute nous donne une adresse qui ne fait plus parti du sous-réseau précedent.
+Après tout ça notre cher traceroute nous donne une adresse qui ne fait plus partie du sous-réseau précedent.
 
 	3  dc3 (62.210.35.1)  1.422 ms  1.531 ms  1.702 ms
 
 C'est donc bien nat-1 (10.60.1.11) qui fait le liens entre notre réseau local et le reste du monde.
 
-Un NAT est un routeur, Network Address Translation, qui permet de mettre tout un sous-reseau derrière une même adresse pour le réseau global.
+Un NAT est un routeur, Network Address Translation, qui permet de mettre tout un sous-reseau derrière une même adresse aux vues du réseau global.

@@ -1,4 +1,6 @@
-Le chemin complet du fichiet dans lequel est écrit l'adresse IP du serveur DNS que j'utilise est /etc/resolv.conf
+Le chemin complet du fichiet dans lequel est écrit l'adresse IP du serveur DNS que j'utilise est :
+
+· /etc/resolv.conf
 
 Sur le mac où je me trouve actuellement :
 

@@ -1,0 +1,1 @@
+sudo du -Lhd0 /var/* 2>/dev/null

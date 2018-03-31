@@ -1,0 +1,11 @@
+Pour changer le nom d'hôte il faut modifier les fichiers suivant :
+
+· /etc/hosts
+· /etc/hostname
+
+Ou de manière plus efficace utiliser la commande suivante :
+
+
+             ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+             ┃ sudo hostnamectl set-hostname newname ┃
+             ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
