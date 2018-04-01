@@ -1,5 +1,11 @@
-42.fr has address 10.52.1.12
-42.fr has address 10.52.1.11
-42.fr has address 10.52.1.76
-42.fr mail is handled by 10 mx02.42.fr.
-42.fr mail is handled by 10 mx01.42.fr.
+Server:		208.67.222.222
+Address:	208.67.222.222#53
+
+Non-authoritative answer:
+Name:	42.fr
+Address: 163.172.250.13
+Name:	42.fr
+Address: 163.172.250.11
+Name:	42.fr
+Address: 163.172.250.12
+

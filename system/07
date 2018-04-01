@@ -1,1 +1,1 @@
-ps aux | grep [s]shd | awk '{print $2}'
+pgrep sshd

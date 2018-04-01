@@ -1,5 +1,7 @@
 #!/bin/bash
 
+tput civis
+
 if [[ $1 = "network" ]]
 then
 	clear
@@ -37,7 +39,7 @@ then
 	clear
 
 	echo -e "\033[32m\033[1mExo 10 :\033[0m\n"
-	cat network/10
+	cat network/10 && sh network/10
 	printf "%.0s-" {1..80}; echo
 	read -n 1 -s
 	clear
@@ -150,7 +152,6 @@ then
 elif [[ $1 = "scripting" ]]
 then
 	clear
-
 	echo -e "\033[32m\033[1mScript 1 :\033[0m\n"
 	cat scripts/passwd.pl
 	read -n 1 -s
@@ -161,8 +162,7 @@ then
 	clear
 
 	echo "Disabling iptable rules in order to update"
-	sudo iptables -D INPUT 2
-	wait 1000
+	sudo iptables -P INPUT ACCEPT
 	echo -e "\033[32m\033[1mScript 2 :\033[0m\n"
 	cat scripts/update.sh
 	read -n 1 -s
@@ -180,12 +180,11 @@ then
 	read -n 1 -s
 	clear
 
-	echo -e "\033[32m\033[1mScript 4 :\033[0m\n"
 	echo "Making some change in /etc/crontab"
 	scripts/crontab_watch.sh create
 	sudo echo "0 22 * * * mplayer Rick_and_Morty" | sudo tee -a /etc/crontab
-	wait 1000
 	clear
+	echo -e "\033[32m\033[1mScript 4 :\033[0m\n"
 	cat scripts/crontab_watch.sh
 	read -n 1 -s
 	./scripts/crontab_watch.sh
@@ -194,11 +193,9 @@ then
 	clear
 
 	echo -e "\033[32m\033[1mScript 5 :\033[0m\n"
-	cat scripts/42.sh
+	echo -e "#!/bin/bash\necho 42"
 	read -n 1 -s
 	./scripts/42.sh
-	printf "%.0s-" {1..80}; echo
-	clear
 	exit 0
 else
 	echo -e "Usage: correction.sh [network system scripting]"
