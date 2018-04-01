@@ -1,1 +1,2 @@
-Le fichier contenant les entrées locales DNS est le fichier hosts, sur les "unix-like" ce fichier se trouve dans /etc/
+Le fichier contenant les entrées locales DNS est le fichier hosts, sur les
+"unix-like" ce fichier se trouve dans /etc/

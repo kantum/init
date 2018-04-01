@@ -1,4 +1,5 @@
-Pour faire pointer une adresse de notre choix sur une ip quelconque il suffit d'ajouter une entrée au fichier /etc/hosts
+Pour faire pointer une adresse de notre choix sur une ip quelconque il suffit
+d'ajouter une entrée au fichier /etc/hosts
 
 Le fichier actuel :
 

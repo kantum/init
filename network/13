@@ -1,5 +1,7 @@
-Il semblerait bien que ce server soit un server DHCP, en effet la command host 10.51.1.253 renvoie :
+Il semblerait bien que ce server soit un server DHCP, en effet la command
+"host 10.51.1.253" renvoie :
 
 253.1.51.10.in-addr.arpa domain name pointer dhcp.42.fr.
 
-Un serveur DHCP (Dynamic Host Configuration Protocol) permet d'allouer automatiquement une adresse ip à une nouvelle machine qui se connecte au réseau.
+Un serveur DHCP (Dynamic Host Configuration Protocol) permet d'allouer
+automatiquement une adresse ip à une nouvelle machine qui se connecte au réseau.

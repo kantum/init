@@ -1,6 +1,8 @@
 Le service qui permet de lancer des tâches régulières est cron.
-Il utilise le fichier crontab qui signifie ChRONos TABle en grec ou table de planification en français.
-Pour planifier une tache il faut éditer le fichier /etc/crontab de la manière suivante :
+Il utilise le fichier crontab qui signifie ChRONos TABle en grec ou table de
+planification en français.
+Pour planifier une tache il faut éditer le fichier /etc/crontab de la manière
+suivante :
 
 crontab -e
 

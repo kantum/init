@@ -1,1 +1,1 @@
-sudo fstab -l
+sudo fdisk -l

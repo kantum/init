@@ -1,4 +1,5 @@
-Le chemin complet du fichiet dans lequel est écrit l'adresse IP du serveur DNS que j'utilise est :
+Le chemin complet du fichiet dans lequel est écrit l'adresse IP du serveur DNS
+que j'utilise est :
 
 · /etc/resolv.conf
 

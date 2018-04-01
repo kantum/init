@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if [[ $1 == "--create" ]]
+if [[ $1 == "create" ]]
 then
 	md5sum /etc/crontab > $HOME/.crontab.md5
-elif [[ `md5sum -c --status $HOME/.crontab.md5` ]]
+elif [[ !  `md5sum -c --status $HOME/.crontab.md5` ]]
 then
 	printf "There is some changes in /etc/crontab :\n\n" |
 	cat - /etc/crontab |
